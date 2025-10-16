@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learining.detik.com</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./public/styles/navbar.css">
+  <link rel="stylesheet" href="./public/styles/content1.css">
+  <link rel="stylesheet" href="./public/styles/content2.css">
+  <link rel="stylesheet" href="./public/styles/content3.css">
+  <link rel="stylesheet" href="./public/styles/content4.css">
+  <link rel="stylesheet" href="public/styles/content5.css">
+  <link rel="stylesheet" href="public/styles/content6.css">
+</head>
+
+<body>
+<!-- <header class="navbar">
+    <div class="container">
+      <a href="https://youtu.be/dQw4w9WgXcQ?feature=shared" class="logo">
+        <img src="https://learning.detik.com/frontpage/assets/images/navbar/logo.png" alt="logo">
+      <nav class="nav-links">
+        
+        <a href="/index.html" class="nav-link active" style="color: orange;">🏚️Home</a>
+        <a href="portfolio/portfolio.html" class="nav-link" style="color: white;">📑 Portfolio</a>
+      </nav>
+    </div>
+  </header> -->
+
+<header>
+    <div class="navbar">
+      <div class="logo-section">
+        <img src="https://learning.detik.com/frontpage/assets/images/navbar/logo.png" alt="Logo" />
+        <div class="logo-text">Learning<br>Management<br>System</div>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 
+                   1.398h-.001l3.85 3.85a1 1 0 0 
+                   0 1.415-1.414l-3.85-3.85zm-5.242 
+                   1.106a5.5 5.5 0 1 1 0-11 
+                   5.5 5.5 0 0 1 0 11z"/>
+        </svg>
+        <input type="text" placeholder="Cari Course" />
+      </div>
+
+      <div class="nav-right" id="navMenu">
+        <span class="blog"><a href="./views/blog.html">Blog</a></span>
+        <button class="btn btn-register">Register</button>
+        <button class="btn btn-login">Login</button>
+      </div>
+    </div>
+  </header>
+
+<div class="content1"></div>
+ <div class="container1">
+    <div class="carousel" id="carousel">
+      <div class="carousel-slide active">
+        <img src="https://learning.detik.com/frontpage/assets/images/hero/learning-with-bestie-min.png" alt="Slide 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="https://learning.detik.com/pluginfile.php/1104/course/overviewfiles/Thumbnail%20Jurnalistik%28Mas%20Irwan%29.png" alt="Slide 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="https://learning.detik.com/frontpage/assets/images/navbar/logo.png" alt="Slide 3">
+      </div>
+
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="cta">
+      <h2>Upgrade Dirimu, Upgrade Karirmu! 🚀</h2>
+      <p>Belajar bersama detikcom kapan pun dan di mana pun!</p>
+      <button>Mulai Belajar Sekarang!</button>
+    </div>
+  </div>
+
+  <div class="content2">
+    <section class="kelas-section">
+      <div class="container2">
+        
+        <div class="kelas-info">
+          <h2>Kelas Terbaru</h2>
+          <p>Temukan ilmu baru dengan berbagai judul kelas terbaru di detikLearning!</p>
+          <button class="lihat-btn">Lihat Semua</button>
+        </div>
+
+        <div class="kelas-card">
+          <img src="./public/images/placeholder1.webp" alt="Mobile Journalism: Videografi dengan ponsel">
+          <div class="kelas-content">
+            <h3>Mobile Journalism: Videografi dengan ponsel</h3>
+            <p>
+              Course ini berisi mengenai mobile journalism yang membahas bagaimana jurnalis menggunakan 
+              handphone untuk kebutuhan videografi atau liputan dengan tujuan pembelajaran. Peserta mampu 
+              menerapkan teknik videografi telepon genggam dalam dunia jurnalistik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="content3">
+    <section class="kategori-section">
+    <div class="kategori-header">
+      <h2>Berbagai Macam Kategori</h2>
+      <p>Eksplor berbagai kelas inspiratif di setiap kategori</p>
+    </div>
+
+    <div class="kategori-carousel">
+      <div class="kategori-card" style="background-color:#dff6ff;">
+        <h3>Business</h3>
+        <p>Business related courses</p>
+        <img src="./public/images/placeholder2.webp" alt="Business">
+      </div>
+
+      <div class="kategori-card" style="background-color:#fde2f3;">
+        <h3>Content</h3>
+        <p>Content related courses</p>
+        <img src="./public/images/placeholder2.webp" alt="Content">
+      </div>
+
+      <div class="kategori-card" style="background-color:#dbeafe;">
+        <h3>Corporate</h3>
+        <p>Corporate related courses</p>
+        <img src="./public/images/placeholder2.webp" alt="Corporate">
+      </div>
+
+      <div class="kategori-card" style="background-color:#e4f9e2;">
+        <h3>Product</h3>
+        <p>Product related courses</p>
+        <img src="./public/images/placeholder2.webp" alt="Product">
+      </div>
+
+      <div class="kategori-card" style="background-color:#fef3e2;">
+        <h3>Self Development</h3>
+        <p>Self related courses</p>
+        <img src="./public/images/placeholder2.webp" alt="Self Development">
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div class="content4">
+    <section class="testimonial-section">
+    <div class="container4">
+      
+      <div class="testimonial-info">
+        <h2>Apa Kata Mereka?</h2>
+        <p>Mari lihat ulasan dan pendapat <strong>#anakdetik</strong> tentang pembelajaran di detikLearning</p>
+        <button class="lihat-btn">Baca Semua</button>
+      </div>
+
+      <div class="testimonial-carousel">
+        <div class="testimonial-card">
+          <p class="quote">“</p>
+          <p class="content">
+            Sebagai seorang jurnalis, detikLearning telah menjadi aset berharga dalam pengembangan keterampilan saya. 
+            Materi pembelajaran mereka sangat relevan dan memberikan wawasan yang berharga dalam bidang jurnalistik. 
+            Ini adalah tempat yang luar biasa untuk meningkatkan kemampuan saya dalam menyampaikan informasi dengan lebih efektif.
+          </p>
+          <hr>
+          <p class="author"><strong>Adib Dwi Kusuma</strong> | UI/UX Designer | CTARSA Foundation</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">“</p>
+          <p class="content">
+            detikLearning adalah teman terbaik dalam perjalanan pembelajaran saya. Saya telah menjelajahi berbagai kursus 
+            yang sangat informatif dan berharga. Melalui platform ini, saya dapat terus meningkatkan pengetahuan saya 
+            di berbagai bidang, dan hasil belajar saya bahkan diakui dengan sertifikat yang sangat bermanfaat. 
+            Terima kasih detikLearning karena telah membuat pembelajaran begitu menyenangkan dan bermanfaat!
+          </p>
+          <hr>
+          <p class="author"><strong>Ridha Fatima Az-Zahra</strong> | Employer Branding | detikcom</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">“</p>
+          <p class="content">
+            Platform ini memberikan pengalaman belajar yang sangat menyenangkan dan interaktif. 
+            Saya mendapatkan banyak pengetahuan baru yang relevan dengan pekerjaan saya. 
+            Kursusnya mudah dipahami dan sangat direkomendasikan untuk siapa pun yang ingin berkembang.
+          </p>
+          <hr>
+          <p class="author"><strong>Rizky Hidayat</strong> | Data Analyst | Freelancer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+<div class="content5">
+  <section class="credential-section">
+    <div class="credential-container">
+      <div class="credential-text">
+        <h2>Cek Kredensial <span>🎓</span></h2>
+        <p>Verifikasi nomor sertifikat kamu di sini!</p>
+      </div>
+      <div class="credential-buttons">
+        <button class="btn-outline">Lihat Caranya</button>
+        <button class="btn-filled">Coba Verifikasi</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="leaderboard-section">
+    <h2>Leaderboard</h2>
+    <table class="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Nama Pemain</th>
+          <th>Poin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Zindi Marcella. H</td><td>20</td></tr>
+        <tr><td>2</td><td>Coba Coba</td><td>10</td></tr>
+        <tr><td>3</td><td>Yusril Resmahadi</td><td>10</td></tr>
+        <tr><td>4</td><td>Insi Faiqoh Setyaningrum</td><td>10</td></tr>
+        <tr><td>5</td><td>dsd sdsd</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="detikcom-stats">
+    <h2>Only for detikcom</h2>
+    <div class="stats-container">
+      <div class="stat">
+        <h3>1000+</h3>
+        <p>Employees Learners</p>
+      </div>
+      <div class="stat">
+        <h3>40+</h3>
+        <p>Amazing Classes</p>
+      </div>
+      <div class="stat">
+        <h3>160+</h3>
+        <p>Amazing Videos</p>
+      </div>
+    </div>
+  </section>
+  </div>
+
+<div class="content6">
+  <section class="get-to-know">
+    <div class="get-container">
+      <div class="video-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZWydMRFGKU4?si=Ws8FQ6ppw61dvv5D"
+          title="Get to Know detikLearning" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="get-text">
+        <h2>Get To Know: detikLearning 💡</h2>
+        <p>
+          detikLearning adalah platform Learning Management System (LMS) yang disediakan oleh detikcom
+          sebagai sarana untuk pembelajaran dan pengembangan diri #anakdetik, karyawan detikcom.
+          Platform ini memungkinkan karyawan untuk mengakses beragam video pembelajaran dari instruktur
+          yang berpengalaman di bidangnya, dengan ketersediaan akses di mana saja dan kapan saja.
+          Melalui detikLearning, detikcom memberikan fasilitas yang memungkinkan karyawan menjalani proses
+          pembelajaran yang fleksibel, mendalam, dan sesuai dengan kebutuhan #anakdetik.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions 🤔</h2>
+    <div class="faq-container">
+
+      <details>
+        <summary>Apa itu detikLearning?</summary>
+        <p>detikLearning adalah platform pembelajaran internal karyawan detikcom.</p>
+      </details>
+
+      <details>
+        <summary>Bagaimana cara untuk membuat akun detikLearning?</summary>
+        <p>Akun akan dibuat otomatis oleh tim HR dan dikirimkan ke email karyawan.</p>
+      </details>
+
+      <details>
+        <summary>Bagaimana cara untuk login ke detikLearning?</summary>
+        <p>Masuk ke portal menggunakan email dan password perusahaan kamu.</p>
+      </details>
+
+      <details>
+        <summary>Apakah saya bisa mengakses semua kelas di detikLearning?</summary>
+        <p>Tergantung hak akses karyawan dan departemen masing-masing.</p>
+      </details>
+
+      <details>
+        <summary>Bagaimana cara mengunduh video pembelajaran di detikLearning?</summary>
+        <p>Saat ini konten hanya dapat diakses secara online.</p>
+      </details>
+
+      <details>
+        <summary>Apakah saya dapat mengakses detikLearning secara offline?</summary>
+        <p>Belum, namun fitur ini sedang dalam tahap pengembangan.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="https://learning.detik.com/frontpage/assets/images/navbar/logo.png" alt="detikcom logo" class="footer-logo">
+        <p>Learning Management System</p>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733614.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">All Course</a>
+        <a href="#">My Course</a>
+        <a href="#">Dashboard</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+    }
+
+    function changeSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+      showSlide(currentSlide);
+    }
+
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+  </body>

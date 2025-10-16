@@ -1,0 +1,96 @@
+.kelas-section {
+  padding: 60px 0;
+}
+
+.container2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* LEFT SIDE */
+.kelas-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.kelas-info h2 {
+  color: #0d47a1;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.kelas-info p {
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.lihat-btn {
+  background-color: #0d47a1;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.lihat-btn:hover {
+  background-color: #0b3a85;
+}
+
+/* RIGHT SIDE (CARD) */
+.kelas-card {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  min-width: 350px;
+}
+
+.kelas-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.kelas-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.kelas-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kelas-card {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .kelas-card img {
+    width: 100%;
+    height: auto;
+  }
+}

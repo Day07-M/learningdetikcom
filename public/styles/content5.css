@@ -1,0 +1,149 @@
+.credential-section {
+  background-color: #fff;
+  padding: 40px 5%;
+  border-radius: 0 0 50px 50px;
+}
+
+.credential-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.credential-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+.credential-text p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.credential-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #0d47a1;
+  border: 2px solid #0d47a1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #0d47a1;
+  color: #fff;
+}
+
+.btn-filled {
+  background-color: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-filled:hover {
+  opacity: 0.9;
+}
+
+.leaderboard-section {
+  background-color: #f8f8f8;
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.leaderboard-section h2 {
+  color: #0d47a1;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.leaderboard-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.leaderboard-table th {
+  background-color: #0d47a1;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.leaderboard-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.detikcom-stats {
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.detikcom-stats h2 {
+  color: #0d47a1;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stat h3 {
+  color: #0d47a1;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .credential-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leaderboard-table {
+    width: 100%;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

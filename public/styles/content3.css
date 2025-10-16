@@ -1,0 +1,75 @@
+.kategori-section {
+  padding: 60px 5%;
+  background-color: #fff;
+  border-radius: 40px 40px 0 0;
+}
+
+.kategori-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.kategori-header h2 {
+  color: #0d47a1;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.kategori-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Horizontal Scroll Carousel */
+.kategori-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.kategori-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.kategori-carousel::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+/* Individual Cards */
+.kategori-card {
+  flex: 0 0 200px;
+  min-height: 220px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.kategori-card:hover {
+  transform: translateY(-5px);
+}
+
+.kategori-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.kategori-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.kategori-card img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,165 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+.logo span {
+  color: #ff6600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #0d47a1;
+}
+
+/* ===== BLOG HERO ===== */
+.blog-hero {
+  background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.blog-hero h2 {
+  font-size: 2rem;
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.blog-hero p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== BLOG GRID ===== */
+.blog-grid {
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #fdfdfd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-content h3 {
+  font-size: 1.2rem;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.read-btn {
+  background-color: #0d47a1;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.read-btn:hover {
+  background-color: #093781;
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.newsletter h2 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 280px;
+}
+
+.newsletter-form button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #093781;
+}

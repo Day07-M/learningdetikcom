@@ -1,0 +1,179 @@
+
+.content1{
+    padding: 10px;
+    background-color: rgba(176, 196, 222, 0.226);
+    border-radius: 0 0 20% 20%;
+}
+
+/* .hero-section {
+  background-color: #0d47a1;
+  color: white;
+  border-radius: 20px;
+  padding: 50px 20px;
+  text-align: center;
+}
+.hero-section img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.cta-section {
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  padding: 40px 20px;
+  margin-top: -40px;
+}
+.cta-section h2 {
+  font-weight: 700;
+  color: #0d47a1;
+}
+.cta-section p {
+  color: #333;
+  margin-bottom: 30px;
+}
+.btn-custom {
+  background-color: #0d47a1;
+  color: white;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
+.btn-custom:hover {
+  background-color: #0b3a85;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 15px;
+  }
+  .cta {
+    padding: 30px 15px;
+  }
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+  .cta p {
+    font-size: 0.95rem;
+  }
+} */
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .container1 {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    /* Carousel (Hero Section) */
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 25px;
+      background-color: #0d47a1;
+      margin-bottom: 40px;
+    }
+
+    .carousel img {
+      width: 100%;
+      border-radius: 25px;
+      display: block;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-slide.active {
+      display: block;
+      position: relative;
+    }
+
+    /* Carousel Arrows */
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+      border: none;
+      font-size: 2rem;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .carousel-btn:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .prev {
+      left: 15px;
+    }
+
+    .next {
+      right: 15px;
+    }
+
+    /* CTA Section */
+    .cta {
+      background-color: #f8f9fa;
+      border-radius: 25px;
+      padding: 50px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .cta h2 {
+      color: #0d47a1;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .cta button {
+      background-color: #0d47a1;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #0b3a85;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .cta {
+        padding: 30px 15px;
+      }
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+      .cta p {
+        font-size: 0.95rem;
+      }
+    }
